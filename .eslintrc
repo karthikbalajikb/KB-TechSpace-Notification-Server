@@ -1,0 +1,35 @@
+{
+    "parser": "babel-eslint",
+    "env" : {
+      "node" : true,
+      "es6" : true
+    },
+    "plugins" : ["babel"],
+    "rules": {
+      "no-console" : "off",
+      "class-methods-use-this": "off",
+      "func-names" : "off",
+      "no-unused-vars" : "off",
+      "no-param-reassign" : "off",
+      "import/extensions" : "off",
+      "no-unused-expressions" : "off",
+      "no-useless-escape" : "off",
+      "import/named" : "off",
+      "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+      "no-use-before-define": ["error", { "variables": false }]
+    },
+    "globals": {
+      "logger" : false,
+      "validateInput" : false,
+      "makeResult" : false,
+      "makeErrorResponse" : false,
+      "AUTH_HEADER" : false,
+      "getAuthHeader" : false,
+      "getTestAuthHeader" : false,
+      "accessToken" : false
+    },
+    "settings": {
+      "import/resolver": "babel-plugin-root-import"
+    },
+    "extends" : ["airbnb-base"]
+  }
